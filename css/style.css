@@ -1,0 +1,180 @@
+:root{
+  --clr-darker-grey: hsl(0, 0%, 8%);
+  --clr-dark-grey: hsl(0, 0%, 12%);
+  --clr-light-grey:hsl(0, 0%, 20%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-green:hsl(75, 94%, 57%);
+}
+
+@font-face {
+  font-family: 'interVariableFont' ;
+  src: url(../assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+.bg-darker-grey{
+  background-color: var(--clr-darker-grey);
+}
+
+.bg-dark-grey{
+  background-color: var(--clr-dark-grey) ;
+}
+
+.bg-light-grey{
+  background-color: var(--clr-light-grey);
+}
+
+.color-white{
+  color: var(--clr-white);
+}
+
+.color-green{
+  color: var(--clr-green);
+}
+
+.top-margin-extra{
+  margin-top:3rem;
+}
+.top-margin-normal{
+  margin-top: 2rem;
+}
+.top-margin-small{
+  margin-top: 1.5rem;
+}
+
+*, *::before, *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  margin-top: 2rem;
+  height: 100vh;
+  font-family: 'interVariableFont',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+}
+
+.wrapper{
+  width: 80vw;
+  max-width: 425px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  
+}
+
+
+.card-information-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+header{
+  height: 20vw;
+  width: 20vw;
+  border-radius: 50%;
+  overflow: hidden;
+  min-height: 100px;
+  min-width: 100px;
+  max-height: 100px;
+  max-width: 100px;
+}
+header img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+ul{
+  list-style: none;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+ul li{
+  background-color: var(--clr-light-grey);
+  margin-bottom: 1.5rem;
+  text-align: center;
+  padding: 1.6rem;
+  border-radius: 0.6rem;
+  font-weight: 700;
+  width: 100%;
+  transition: background-color 0.24s;
+}
+ul li:hover,  ul li:focus-within{
+  background-color: var(--clr-green);
+  cursor: pointer;
+}
+
+ul li:active{
+  background-color: hsl(75, 93%, 83%);
+}
+
+a{
+  text-decoration: none;
+  color: var(--clr-white);
+  transition: color 0.24s;
+}
+
+ul li:hover a, ul li a:focus {
+  color: var(--clr-darker-grey); /* Changes the color of the anchor text inside the hovered list item */
+}
+
+
+
+h1,h2{
+  font-weight: 600;
+}
+h2{
+  font-size: 1.65rem; 
+}
+
+footer{
+  margin-top: 2vw;
+  color: gray;
+  font-size: 1rem;
+}
+
+.author{
+  font-size: 1.4rem;
+  letter-spacing: .8em;
+  padding-left: 1rem;
+  margin-right: 1rem;
+  background-color: var(--clr-dark-grey);
+  border-radius: 2px;
+  transition: transform 0.24s ease-in-out;
+}
+
+.author:hover, .author:focus-within{
+  display: inline-block;
+  transform: scale(1.4);
+  cursor: pointer;
+  background-color: var(--clr-green);
+ 
+}
+.author:hover a{
+  color: var(--clr-darker-grey);
+}
+
+.heart{
+  color: red;
+}
